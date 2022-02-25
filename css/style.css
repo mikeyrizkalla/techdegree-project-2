@@ -132,8 +132,8 @@ footer p,
 .footer-navigation {
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 0;
-  margin-top: 4rem;
+  padding: 30px;
+  margin: 4rem 20px 0;
   border-top: solid rgba(33,33,33,.2) .3px;
 }
 .footy {
@@ -141,6 +141,10 @@ footer p,
 }
 .foot-contact p {
   margin-bottom: 30px;
+}
+.footer p {
+  max-width: 70%;
+  margin-bottom: 20px;
 }
 
 
@@ -179,6 +183,29 @@ MEDIA QUERIES
   .col {
     flex-basis: 50%;
     padding: 10px;
+  }
+  .foot-contact {
+    margin-bottom: 60px;
+  }
+  .footer-navigation {
+    margin: auto;
+  }
+  .footer p {
+    max-width: 50%;
+    margin-bottom: 30px;
+  }
+  .small {
+    display: none;
+  }
+  .big {
+    display: inline-block;
+  }
+  .my-name {
+    align-self: flex-start;
+    padding-left: 20px;
+  }
+  .footy a {
+    padding: 5px 20px 5px 10px;
   }
 }
 
@@ -219,21 +246,5 @@ MEDIA QUERIES
   .col {
     flex-basis: 33%;
     padding: 10px;
-  }
-  .footer p {
-    max-width: 40%;
-    margin-bottom: 30px;
-  }
-  .small {
-    display: none;
-  }
-  .big {
-    display: inline-block;
-  }
-  .my-name {
-    align-self: flex-start;
-  }
-  .footy a {
-    padding: 5px 10px 5px 10px;
   }
 }
