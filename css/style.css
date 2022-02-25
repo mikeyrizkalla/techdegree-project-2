@@ -27,7 +27,8 @@ main {
   margin: auto;
 }
 .main-info p,
-.footer p {
+.footer p,
+.foot-contact {
   font-size: 1.5rem;
 }
 .main-header,
@@ -38,14 +39,16 @@ nav,
 .main-info,
 .portfolio,
 .skills,
-.footer {
+.footer,
+.footer-navigation {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 }
-.big {
-  display: none;
+.name {
+  font-size: 2rem;
+  padding: 10px;
 }
 .main-nav a {
   display: block;
@@ -55,8 +58,7 @@ nav,
   border-radius: 5%;
 }
 .main-nav,
-.foot-contact,
-.foot-nav {
+.foot-contact {
   padding-left: 0;
 }
 .main-image {
@@ -86,10 +88,11 @@ nav,
 }
 footer p,
 .foot-contact,
-.foot-nav {
+.footer-navigation {
   display: flex;
   width: 90vw;
   align-self: center;
+  margin: auto;
 }
 .foot-contact {
   flex-direction: column;
@@ -98,15 +101,24 @@ footer p,
   padding-top: 20px;
   align-self: center;
 }
+.big {
+  display: none;
+}
 .foot-contact a {
   padding-left: 15px;
 }
-.foot-nav {
+.footer-navigation {
   flex-direction: row;
   justify-content: space-between;
   padding: 30px 0;
   margin-top: 4rem;
-  border-top: solid rgba(33,33,33,.3) 1px;
+  border-top: solid rgba(33,33,33,.2) .3px;
+}
+.footy {
+  margin: auto 0;
+}
+.foot-contact p {
+  margin-bottom: 30px;
 }
 
 
@@ -120,6 +132,9 @@ MEDIA QUERIES
   .main-section,
   .secondary-section {
     flex-direction: row;
+  }
+  .name {
+    margin-bottom: 0;
   }
   .main-nav a {
     display: inline-block;
@@ -142,6 +157,12 @@ MEDIA QUERIES
     flex-basis: 50%;
     padding: 10px;
   }
+  footer {
+    background-color: #ffe77c;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -151,15 +172,29 @@ MEDIA QUERIES
     padding-top: 30px;
     margin: auto;
   }
+  .name {
+    padding: 5px;
+  }
   nav {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .main-nav {
+    margin: auto 0;
   }
   .main-info {
     margin: auto;
   }
   .main-image {
     min-width: 35vw;
+    margin-bottom: 30px;
+  }
+  .col {
+    flex-basis: 33%;
+    padding: 10px;
+  }
+  .footer p {
+    max-width: 60vw;
     margin-bottom: 30px;
   }
   .small {
@@ -170,5 +205,15 @@ MEDIA QUERIES
   }
   .my-name {
     align-self: flex-start;
+  }
+  .footer-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 90vw;
+  }
+  .footy a {
+    padding: 5px 10px 5px 10px;
   }
 }
