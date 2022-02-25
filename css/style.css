@@ -9,27 +9,43 @@ a,
   color: #4a4a4a;
   font-weight: 700;
 }
+.footy a,
+.main-nav a {
+  transition: box-shadow .3s;
+  border-radius: 10px;
+}
+.footy a:hover,
+.main-nav a:hover {
+  box-shadow: 0 0 11px rgba(100,100,100,.3);
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
   font-family: 'Work Sans', sans-serif;
   color: #4a4a4a;
   background-color: #fafafa;
   margin: 0;
 }
+.skills {
+  font-family: 'Montserrat', sans-serif;
+}
 main {
   background-color: #fff;
-  width: 95vw;
+  width: 95%;
+  padding: 40px 0;
   margin: auto;
+
 }
 .main-info p,
 .footer p,
 .foot-contact {
   font-size: 1.5rem;
+}
+section p {
+  font-size: 1.4rem;
 }
 .main-header,
 .main-nav,
@@ -53,16 +69,19 @@ nav,
 .main-nav a {
   display: block;
   background-color: #fff;
-  padding: 10px;
+  padding: 14px;
   margin: 5px 15px;
   border-radius: 5%;
+}
+.main-nav {
+  margin-bottom: 30px;
 }
 .main-nav,
 .foot-contact {
   padding-left: 0;
 }
 .main-image {
-  max-width: 50vh;
+  max-width: 60%;
   align-self: center;
 }
 .portfolio,
@@ -73,12 +92,12 @@ nav,
   width: 100%;
 }
 .section-name {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 3.5rem;
 }
 .col h2{
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  margin: 35px 0;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .col p {
@@ -86,11 +105,14 @@ nav,
   margin-bottom: 30px;
   font-weight: 500;
 }
+.col img {
+  margin-top: 30px;
+}
 footer p,
 .foot-contact,
 .footer-navigation {
   display: flex;
-  width: 90vw;
+  max-width: 1200px ;
   align-self: center;
   margin: auto;
 }
@@ -133,8 +155,9 @@ MEDIA QUERIES
   .secondary-section {
     flex-direction: row;
   }
-  .name {
-    margin-bottom: 0;
+  .main-image {
+    width: 50%;
+    margin-left: 30px;
   }
   .main-nav a {
     display: inline-block;
@@ -157,20 +180,24 @@ MEDIA QUERIES
     flex-basis: 50%;
     padding: 10px;
   }
-  footer {
-    background-color: #ffe77c;
-    border-radius: 10px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-  }
 }
 
 @media screen and (min-width: 1024px) {
   
   .main-header {
-    max-width: 85vw;
+    max-width: 85%;
     padding-top: 30px;
     margin: auto;
+  }
+  main{
+    max-width: 1350px;
+    border-radius: 10px;
+  }
+  .header-container,
+  .portfolio-container,
+  .skills-container {
+  max-width: 1200px;
+  margin: auto;
   }
   .name {
     padding: 5px;
@@ -186,7 +213,7 @@ MEDIA QUERIES
     margin: auto;
   }
   .main-image {
-    min-width: 35vw;
+    min-width: 40%;
     margin-bottom: 30px;
   }
   .col {
@@ -194,7 +221,7 @@ MEDIA QUERIES
     padding: 10px;
   }
   .footer p {
-    max-width: 60vw;
+    max-width: 40%;
     margin-bottom: 30px;
   }
   .small {
@@ -205,13 +232,6 @@ MEDIA QUERIES
   }
   .my-name {
     align-self: flex-start;
-  }
-  .footer-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    width: 90vw;
   }
   .footy a {
     padding: 5px 10px 5px 10px;
